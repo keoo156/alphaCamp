@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Event Loop</title>
+</head>
+<body>
+    <h2>先看圖</h2>
+    <img src="./結圖區/螢幕擷取畫面 2023-04-07 155251.png" alt="">
+    <p>為什麼會有這種情況，理論上來說，setTimeout 0秒後執行，應該要能夠在hello前執行才對</p>
+    <h2>流程解說</h2>
+    <img src="./結圖區/螢幕擷取畫面 2023-04-07 155820.png" alt="">
+    <p>橘色區塊是我們的call stack 藍色是web api 綠色是工作佇列<br>
+    概念上是這樣，當程式執行時setTimeout會被放到call stack中,但是因為它不是js本身的函式<br>
+所以說被放到call stack後就會馬上被移到藍色區塊，就是webapi區域中，並不會馬上被執行,接著是console被放到橘色區塊，然後執行<br>
+接著呢setTimeout當中的函式在倒數結束後執行，會放到綠色區塊中，等到call stack中沒有東西了，才會從綠色區塊拿程式出來跑</p>
+        <h2>所以才會有第一張圖的結果</h2>
+            <p>不論設定幾秒，零秒也是一樣，因為setTimeout是web給的功能，所以會先到藍色在到綠色，最後黃色區塊空的時後才會執行<br>
+            就不會像我們預期的先跑setTimeout裡面的函式</p>
+        <h2>參考影片</h2>
+        <p>https://www.youtube.com/watch?v=8aGhZQkoFbQ</p>
+        <p>附上參考影片，裡面有更多的範例跟解釋</p>
+</body>
+</html>
