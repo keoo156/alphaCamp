@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 60%;
+  margin: 5rem auto;
+  justify-content: center;
+}
+body .rgb, body .hex {
+  text-align: center;
+  margin: 0 5rem;
+}
+body .rgb .red, body .rgb .green, body .rgb .blue {
+  display: flex;
+}
+body .rgb .red .redbox, body .rgb .red .greenbox, body .rgb .red .bluebox, body .rgb .green .redbox, body .rgb .green .greenbox, body .rgb .green .bluebox, body .rgb .blue .redbox, body .rgb .blue .greenbox, body .rgb .blue .bluebox {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid black;
+}
+body .rgb .red .redbox, body .rgb .green .redbox, body .rgb .blue .redbox {
+  background-color: red;
+}
+body .rgb .red .greenbox, body .rgb .green .greenbox, body .rgb .blue .greenbox {
+  background-color: green;
+}
+body .rgb .red .bluebox, body .rgb .green .bluebox, body .rgb .blue .bluebox {
+  background-color: blue;
+}
+body .rgb input {
+  margin: 0.3rem 1rem 0.3rem 0.5rem;
+}
+body .rgb .submit {
+  width: 5rem;
+}
+body .hex .hex_num {
+  border: 1px solid black;
+  width: 7rem;
+  height: 1.5rem;
+}
+body .hex .hex_color {
+  border: 1px solid black;
+  width: 3rem;
+  height: 3rem;
+  margin: 1rem auto;
+}/*# sourceMappingURL=style.css.map */

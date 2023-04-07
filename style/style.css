@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Baloo 2", cursive, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+body {
+  background-color: #f6f7f8;
+}
+body header {
+  height: 10rem;
+  margin-bottom: 3rem;
+}
+body header nav {
+  background: #bdc3c7; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+body header nav .fa-shield-halved {
+  font-size: 5rem;
+  margin: auto;
+}
+body main {
+  padding: 0 10rem;
+}
+body main .imgintro {
+  display: flex;
+}
+body main .imgintro .imgandicon img {
+  width: 240px;
+  height: 240px;
+  border-radius: 20%;
+}
+body main .imgintro .imgandicon ul {
+  display: flex;
+}
+body main .imgintro .imgandicon ul li {
+  list-style: none;
+  font-size: 3rem;
+  margin: 0 1rem;
+}
+body main .imgintro .imgandicon ul li a {
+  color: #2c3e50;
+}
+body main .imgintro .person-intro {
+  margin-left: 2rem;
+}
+body main .imgintro .person-intro h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+body main .imgintro .person-intro .intro {
+  font-size: 1.3rem;
+  color: #333333;
+}
+body main .skills {
+  padding-top: 2rem;
+}
+body main .skills h2 {
+  margin-bottom: 1.25rem;
+}
+body main .skills .skill {
+  display: flex;
+  justify-content: space-evenly;
+}
+body main .skills .skill .skilldetail {
+  margin: 1.5rem 0;
+  padding: 0 0.8rem;
+}
+body main .skills .skill .skilldetail h3 {
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+  height: 3.8rem;
+}
+body main .skills .skill .skilldetail p {
+  font-size: 1.5rem;
+  padding-top: 0.8rem;
+}
+body main .jobexp .jobdetail h3, body main .jobexp .jobdetail h4 {
+  padding: 0.7rem 0;
+  font-size: 1.5rem;
+}
+body main .jobexp .jobdetail h3 i, body main .jobexp .jobdetail h4 i {
+  padding: 0 0.7rem;
+}
+body main .jobexp .jobdetail div.jobachivement {
+  padding-top: 0.7rem;
+  font-size: 1.5rem;
+  color: #333333;
+}
+body main .jobexp .jobdetail div.jobachivement ul {
+  padding-top: 0.7rem;
+  padding-left: 0.8rem;
+}
+body footer {
+  height: 8rem;
+}/*# sourceMappingURL=style.css.map */

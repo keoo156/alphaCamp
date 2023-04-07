@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    width: 60%;
+    margin: 5rem auto;
+    justify-content: center;
+    .rgb, .hex{
+        text-align: center;
+        margin: 0 5rem;
+    }
+    .rgb{
+        .red ,.green ,.blue{
+            display: flex;
+            .redbox,.greenbox,.bluebox{
+                width: 1.5rem;
+                height: 1.5rem;
+                border: 1px solid black;
+            }
+            .redbox{
+                background-color: red;
+            }
+            .greenbox{
+                background-color: green;
+            }
+            .bluebox{
+                background-color: blue;
+        }
+        input{
+            margin: 0.3rem 1rem 0.3rem 0.5rem;
+        }
+        .submit{
+            width: 5rem;
+        }
+    }
+    .hex{
+        .hex_num{
+            border: 1px solid black;
+            width: 7rem;
+        }
+        .hex_color{
+            border: 1px solid black;
+            width: 3rem;
+            height: 3rem;
+            margin: 1rem auto;
+        }
+    }
+}
